@@ -1,16 +1,82 @@
-# React + Vite
+# Photo Gallery App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal and responsive photo gallery web application built using **React**, **Vite**, and **Tailwind CSS**.
+The application fetches images from a public API, displays them in a responsive grid, allows users to search photos by author name, and mark photos as favourites.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://your-vercel-link.vercel.app
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Fetches 30 photos from the Picsum Photos API
+* Displays images in a responsive grid layout
+* Search photos by photographer name in real time
+* Mark photos as favourites
+* Favourite photos persist after page refresh using localStorage
+* Clean and minimal UI built with Tailwind CSS
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React
+* Vite
+* Tailwind CSS
+* React Icons
+* JavaScript (ES6)
+
+## React Concepts Used
+
+* Custom Hooks (`useFetchPhotos`)
+* `useReducer` for managing favourites
+* `useMemo` for optimizing filtered results
+* `useCallback` for memoizing event handlers
+* `localStorage` for persistent state
+
+## API Used
+
+This project uses the public Picsum Photos API:
+
+https://picsum.photos/v2/list?limit=30
+
+## Project Structure
+
+src
+
+* components
+
+  * Gallery.jsx
+* hooks
+
+  * useFetchPhotos.js
+* reducer
+
+  * favouritesReducer.js
+* App.jsx
+* main.jsx
+* index.css
+
+## Installation
+
+Clone the repository
+
+git clone https://github.com/your-username/photo-gallery-react.git
+
+Navigate to the project folder
+
+cd photo-gallery-react
+
+Install dependencies
+
+npm install
+
+Start the development server
+
+npm run dev
+
+The application will run at:
+
+http://localhost:5173
+
+## Author
+
+Developed by NITHIIN

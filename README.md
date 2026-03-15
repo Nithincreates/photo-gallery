@@ -59,7 +59,7 @@ src
 
 Clone the repository
 
-git clone https://github.com/your-username/photo-gallery-react.git
+git clone https://github.com/your-username/photo-gallery.git
 
 Navigate to the project folder
 

@@ -5,7 +5,7 @@ The application fetches images from a public API, displays them in a responsive 
 
 ## Live Demo
 
-https://your-vercel-link.vercel.app
+https://photo-gallery-c1p6.vercel.app
 
 ## Features
 
